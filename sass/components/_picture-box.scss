@@ -1,0 +1,23 @@
+.picture-box {
+  max-height: 31rem;
+  max-width: 38rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 3rem rgba($color-black, 0.5);
+
+  transition: transform 0.3s;
+
+  @include respond(tab-port) {
+    max-height: none;
+    max-width: none;
+  }
+
+  &__picture {
+    height: 100%;
+    width: 100%;
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem) scale(1.05);
+  }
+}
